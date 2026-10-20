@@ -10,6 +10,7 @@
 public class App {
     public static void main(String[] args) {
         // Week 2 informative indicator, title, and student name
+        System.out.println();
         System.out.println("PROJECT WEEK 2: Object-Oriented Interfaces & Polymorphism Demonstration");
         System.out.println("Digital Health Card Application");
         System.out.println("Author: Manuel Ortiz");
