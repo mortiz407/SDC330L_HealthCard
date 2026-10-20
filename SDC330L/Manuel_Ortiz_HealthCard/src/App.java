@@ -14,9 +14,8 @@ public class App {
         System.out.println("Digital Health Card Application");
         System.out.println("Author: Manuel Ortiz");
 
-        // Welcome message with basic instructions
+        // Welcome message
         System.out.println("\nWelcome to the Digital Health Card System!");
-        System.out.println("Instructions: Reviewing polymorphically rendered medical records and export feeds.\n");
 
         // 1. Setup composite entities (EmergencyContact and Person)
         EmergencyContact contact1 = new EmergencyContact("Siwar Ortiz", "Spouse", "(123) 456-7899");
@@ -44,14 +43,14 @@ public class App {
         // An array of the interface type (Exportable) holds instances of different derived classes.
         Exportable[] healthRecords = new Exportable[] { standardCard, emergencyCard };
 
-        System.out.println(" POLYMORPHIC BADGE DISPLAY ");
+        System.out.println(" POLYMORPHIC BADGE DISPLAY \n");
         for (Exportable record : healthRecords) {
             // Polymorphically executes either StandardMedicalCard or EmergencyMedicalCard displayCard()
             record.displayCard();
             System.out.println();
         }
 
-        System.out.println(" POLYMORPHIC AUDIT EXPORT ");
+        System.out.println(" POLYMORPHIC AUDIT EXPORT \n");
         for (Exportable record : healthRecords) {
             // Polymorphically executes exportSummary()
             System.out.println(record.exportSummary());
